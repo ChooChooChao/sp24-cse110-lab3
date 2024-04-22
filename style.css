@@ -24,6 +24,11 @@ p, ul, ol {
 
 /* Handles the box model and sizing for the form element */
 form {
+    border-style: dotted;
+    border-color: blue;
+    border-width: 2pt;
+    border-radius: 0vw;
+
     height: 435px;
     width: 50%;
     max-width: 1000px;
