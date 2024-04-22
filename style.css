@@ -3,9 +3,13 @@
     src: url(fonts/Jersey25-Regular.ttf);
 }
 
+body {
+    --my-var: red;
+}
+
 /* Element Selector Makes all the subsections colored with a red title*/
 h5 {
-    color: hsl(0, 93%, 49%);
+    color: var(--my-var, hsl(0, 93%, 49%));
     font-family: 'Jersey-25', sans-serif;
     font-size: 1.2rem;
 }
