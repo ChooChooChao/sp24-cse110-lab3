@@ -16,3 +16,11 @@ p, ul, ol {
     font-size: 0.75em;
 }
 
+form {
+    height: 435px;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 500px;
+    background-color: aqua;
+}
+
