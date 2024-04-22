@@ -21,10 +21,58 @@ p, ul, ol {
 }
 
 form {
+    border-style: dotted;
+    border-color: blue;
+    border-width: 2pt;
+    border-radius: 0vw;
+
     height: 435px;
     width: 50%;
     max-width: 1000px;
     min-width: 500px;
     background-color: aqua;
+
+    margin: auto;
 }
 
+main {
+    border-style: dotted;
+    border-color: black;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section {
+    border-style: dotted;
+    border-color: red;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    margin: 30px 10px 30px 10px;
+}
+
+header {
+    border-style: dotted;
+    border-color: green;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    padding-top: 0.5cm;
+    padding-bottom: 0cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+footer {
+    border-style: dotted;
+    border-color: purple;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    padding: 0.5cm 0cm 0.5cm 0.5cm
+}
