@@ -3,16 +3,20 @@
     src: url(fonts/Jersey25-Regular.ttf);
 }
 
+body {
+    --my-var: red;
+}
+
 /* Element Selector Makes all the subsections colored with a red title*/
 h5 {
-    color: hsl(0, 93%, 49%);
+    color: var(--my-var, hsl(0, 93%, 49%));
     font-family: 'Jersey-25', sans-serif;
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
 /* Selector List: Makes both unordered and ordered lists, as well as paragaphs the same color*/ 
 p, ul, ol {
     color: color-mix(in srgb, rgb(150, 150, 150) 50%, rgb(0, 0, 255) 50%);
-    font-size: 0.75em
+    font-size: 0.75em;
 }
 
