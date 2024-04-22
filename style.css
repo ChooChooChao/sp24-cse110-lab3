@@ -1,8 +1,10 @@
+/* Creates the font family for the third party font*/
 @font-face {
     font-family: "Jersey-25";
     src: url(fonts/Jersey25-Regular.ttf);
 }
 
+/*CSS variable declaration and initialization*/
 body {
     --my-var: red;
 }
@@ -20,11 +22,59 @@ p, ul, ol {
     font-size: 0.75em;
 }
 
+/* Handles the box model and sizing for the form element */
 form {
     height: 435px;
     width: 50%;
     max-width: 1000px;
     min-width: 500px;
     background-color: aqua;
+
+    margin: auto;
 }
 
+/* Handles the box model for the main element */
+main {
+    border-style: dotted;
+    border-color: black;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Handles the box model for section elements */
+section {
+    border-style: dotted;
+    border-color: red;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    margin: 30px 10px 30px 10px;
+}
+
+/* Handles the box model for the header element */
+header {
+    border-style: dotted;
+    border-color: green;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    padding-top: 0.5cm;
+    padding-bottom: 0cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+/* Handles the box model for the footer element */
+footer {
+    border-style: dotted;
+    border-color: purple;
+    border-width: 2pt;
+    border-radius: 0vw;
+
+    padding: 0.5cm 0cm 0.5cm 0.5cm
+}
