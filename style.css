@@ -52,7 +52,7 @@ main {
 }
 
 /* Handles the box model for section elements */
-section {
+section, div {
     border-style: dotted;
     border-color: red;
     border-width: 2pt;
