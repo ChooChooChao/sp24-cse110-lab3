@@ -4,6 +4,17 @@
     src: url(fonts/Jersey25-Regular.ttf);
 }
 
+/* Handles the responsiveness of the webpage for different screen types */
+@media screen {
+    video {
+        width: 100%;
+    }
+
+    image {
+        width: 100%;
+    }
+}
+
 /*CSS variable declaration and initialization*/
 body {
     --my-var: red;
@@ -58,7 +69,7 @@ section, div {
     border-width: 2pt;
     border-radius: 0vw;
 
-    margin: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 10px; 
 }
 
 /* Handles the box model for the header element */
@@ -81,7 +92,7 @@ footer {
     border-width: 2pt;
     border-radius: 0vw;
 
-    padding: 0.5cm 0cm 0.5cm 0.5cm
+    padding: 0.5cm 0cm 0.5cm 0.5cm;
 }
 
 /* Uses flex to adjust the layout, as well as an ID selector */
