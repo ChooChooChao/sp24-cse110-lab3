@@ -110,20 +110,24 @@ footer {
     align-items: center;
 }
 
+/* Uses a class selector to implement grid on the footer */ 
 .footer_layout {
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
+/* Another class selector to target the video */
 .itemA {
     place-self: center;
 }
 
+/* Pseudo-class item to have the button change color on hover */
 button:hover {
     background-color:pink;
 }
 
+/* Pseudo-class item to have the button have a shadow on click */
 button:active {
     box-shadow: 2px 2px 5px red;
 }
