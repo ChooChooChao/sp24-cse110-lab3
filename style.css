@@ -15,22 +15,36 @@
     }
 }
 
+/* Changes all the font to the one that is a third party import */
+* {
+    font-family: "Jersey-25", sans-serif;
+}
+
 /*CSS variable declaration and initialization*/
 body {
     --my-var: red;
 }
 
+/* Adds an underline to the title */
+h1 {
+    text-decoration-line: underline;
+}
+
 /* Element Selector Makes all the subsections colored with a red title*/
 h5 {
     color: var(--my-var, hsl(0, 93%, 49%));
-    font-family: 'Jersey-25', sans-serif;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /* Selector List: Makes both unordered and ordered lists, as well as paragaphs the same color*/ 
 p, ul, ol {
     color: color-mix(display-p3, color(display-p3 0.8 0.8 0.8) 50%, color(display-p3 0.5 0.5 0.5) 50%);
     font-size: 0.75em;
+}
+
+p:has(+ ul) {
+    color: gray;
 }
 
 /* Handles the box model and sizing for the form element */
@@ -122,12 +136,32 @@ footer {
     place-self: center;
 }
 
-/* Pseudo-class item to have the button change color on hover */
-button:hover {
-    background-color:pink;
+/* Uses the :has() selector */
+div:has(p) {
+    text-align: center;
 }
 
-/* Pseudo-class item to have the button have a shadow on click */
-button:active {
-    box-shadow: 2px 2px 5px red;
+/* Uses the :has() selector */
+section:has(p) {
+    text-align: center;
+}
+
+/* Demonstrates a nested selector using the items in the form fieldset */
+fieldset {
+    text-align: center;
+
+    /* Pseudo-class item to have the button have a shadow on click */
+    & button:active {
+        box-shadow: 2px 2px 5px red;
+    }
+
+    /* Pseudo-class item to have the button change color on hover */
+    & button:hover {
+        background-color:pink;
+    }
+}
+
+/* Uses the attribute selector to change the color of a specified h5 to blue */
+h5[lang~="en-us"] {
+    color: blue;
 }
