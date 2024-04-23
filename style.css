@@ -147,18 +147,21 @@ section:has(p) {
 }
 
 /* Demonstrates a nested selector using the items in the form fieldset */
-fieldset {
-    text-align: center;
-
-    /* Pseudo-class item to have the button have a shadow on click */
-    & button:active {
-        box-shadow: 2px 2px 5px red;
+.nestedSelector {
+    color:brown;
+    & > b {
+        color:coral;
     }
+}
 
-    /* Pseudo-class item to have the button change color on hover */
-    & button:hover {
-        background-color:pink;
-    }
+/* Pseudo-class item to have the button have a shadow on click */
+button:active {
+    box-shadow: 2px 2px 5px red;
+}
+
+/* Pseudo-class item to have the button change color on hover */
+button:hover {
+    background-color:pink;
 }
 
 /* Uses the attribute selector to change the color of a specified h5 to blue */
