@@ -165,3 +165,28 @@ fieldset {
 h5[lang~="en-us"] {
     color: blue;
 }
+
+/* child combinator */
+fieldset > textarea {
+    color: red;
+}
+
+/* descendant combinator*/
+fieldset label {
+    color: green;
+}
+
+/* adjacent sibling combinator */
+img + details {
+    text-decoration-line: underline;
+}
+
+/* General sibling combinator */
+h5 ~ ul, ol {
+    color: blueviolet
+}
+
+/* combining two selectors */
+section.section1 {
+    background-color: aquamarine;
+}
