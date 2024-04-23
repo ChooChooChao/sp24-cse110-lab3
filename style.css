@@ -18,7 +18,7 @@ h5 {
 
 /* Selector List: Makes both unordered and ordered lists, as well as paragaphs the same color*/ 
 p, ul, ol {
-    color: color-mix(srgb, rgb(150, 150, 150) 50%, rgb(0, 0, 255) 50%);
+    color: color-mix(display-p3, color(display-p3 0.8 0.8 0.8) 50%, color(display-p3 0.5 0.5 0.5) 50%);
     font-size: 0.75em;
 }
 
