@@ -35,6 +35,9 @@ p, ul, ol {
 
 /* Handles the box model and sizing for the form element */
 form {
+    display: block;
+    position: static;
+
     border-style: dotted;
     border-color: blue;
     border-width: 2pt;
@@ -51,6 +54,10 @@ form {
 
 /* Handles the box model for the main element */
 main {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+
     border-style: dotted;
     border-color: black;
     border-width: 2pt;
@@ -111,4 +118,12 @@ footer {
 
 .itemA {
     place-self: center;
+}
+
+button:hover {
+    background-color:pink;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px red;
 }
