@@ -18,7 +18,7 @@ h5 {
 
 /* Selector List: Makes both unordered and ordered lists, as well as paragaphs the same color*/ 
 p, ul, ol {
-    color: color-mix(in srgb, rgb(150, 150, 150) 50%, rgb(0, 0, 255) 50%);
+    color: color-mix(srgb, rgb(150, 150, 150) 50%, rgb(0, 0, 255) 50%);
     font-size: 0.75em;
 }
 
@@ -82,4 +82,22 @@ footer {
     border-radius: 0vw;
 
     padding: 0.5cm 0cm 0.5cm 0.5cm
+}
+
+/* Uses flex to adjust the layout, as well as an ID selector */
+#headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_layout {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.itemA {
+    place-self: center;
 }
